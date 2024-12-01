@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Onboarding
 
-## Getting Started
+Run git clone https://github.com/RISE-sait/admin-page.git to download the repo in your desired location.
 
-First, run the development server:
+Run `npm i` then `npm run dev`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Done.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now whenever you make changes to the code, and save, the page will automatically reload
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# How to contribute
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Find issues by checking the Issues tab, or discover issues by yourself.
 
-## Learn More
+When u want to push your contribution, create a new branch with a suitable title and description, like this:
 
-To learn more about Next.js, take a look at the following resources:
+The following examples are for a different Repo but the same approach still applies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![image](https://github.com/user-attachments/assets/168885a3-7234-493d-aa75-ad110c298595)
+![image](https://github.com/user-attachments/assets/44fd4880-6001-4ef8-b264-5bea8cbd5c0f)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+After creating a branch, you will automatically be directed to the branch. But still, check to make sure you are. If you are, it should look like this:
+Notice how I am in 'a new branch' instead of 'main' now, it means the branch change was successful.
 
-## Deploy on Vercel
+![image](https://github.com/user-attachments/assets/db4b9f39-f309-4a10-a56d-e4905b367732)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+After pushing and syncing the changes, you can go to Github, then you will see an option to create a new PR from the branch you created, proceed to create the PR. Now it's done and notify your teammates to review the code.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You welcome
