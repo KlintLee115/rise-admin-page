@@ -3,7 +3,7 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import NavMenu from "./components/navmenu";
+import NavMenu from "@/app/components/navmenu";
 
 export default function Home() {
   
@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div>
-      <NavMenu/>
+        <NavMenu/>
     </div>
   );
 
