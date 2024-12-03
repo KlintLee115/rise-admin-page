@@ -32,6 +32,7 @@ export default function Login() {
           className="p-2 w-52 bg-[#1D1D1D] text-white rounded-md hover:bg-blue-700 drop-shadow-md"
         >
           Google SSO Login
+          
         </button>
       </div>
     </div>
