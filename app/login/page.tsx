@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image";
 import RiseLogo from "@/public/RiseLogo.svg"
 import { signIn, useSession } from "next-auth/react";
