@@ -4,6 +4,7 @@ import "./globals.css";
 import { SessionProvider } from "next-auth/react";
 import NavMenu from "./components/navmenu";
 import Session from "./components/session";
+import { usePathname } from "next/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,6 +23,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const pathname = usePathname();
+  const isLoginPage = pathname === "/login";
+
   return (
     <html lang="en">
       <body
@@ -30,8 +35,8 @@ export default function RootLayout({
       <SessionProvider>
       <Session/>
       <div className="flex" >
-      <NavMenu/>
-      {children}
+        {!isLoginPage && <NavMenu />}
+        {children}
       </div>
       </SessionProvider>
       </body>
