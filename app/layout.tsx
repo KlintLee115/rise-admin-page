@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import localFont from "next/font/local";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
@@ -23,7 +23,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   const pathname = usePathname();
   const isLoginPage = pathname === "/login";
 
@@ -32,13 +31,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <SessionProvider>
-      <Session/>
-      <div className="flex" >
-        {!isLoginPage && <NavMenu />}
-        {children}
-      </div>
-      </SessionProvider>
+        <SessionProvider>
+          <Session />
+          <div className="flex">
+            {!isLoginPage && <NavMenu />}
+            <main className="flex-1 p-4">{children}</main>
+          </div>
+        </SessionProvider>
       </body>
     </html>
   );
