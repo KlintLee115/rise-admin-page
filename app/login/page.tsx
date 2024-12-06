@@ -24,17 +24,15 @@ export default function Login() {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen w-screen">
-      <div className="text-black flex flex-col items-center">
-        <Image src={RiseLogo} alt="RiseLogo" />
-        <button
-          onClick={() => signIn("google", { callbackUrl: "/" })}
-          className="p-2 w-52 bg-[#1D1D1D] text-white rounded-md hover:bg-blue-700 drop-shadow-md"
-        >
-          Google SSO Login
-          
-        </button>
-      </div>
+    <div className="flex flex-col justify-center items-center text-black h-full">
+      <Image src={RiseLogo} alt="RiseLogo" />
+      <button
+        onClick={() => signIn("google", { callbackUrl: "/" })}
+        className="p-2 w-52 bg-[#1D1D1D] text-white rounded-md hover:bg-blue-700 drop-shadow-md"
+      >
+        Google SSO Login
+
+      </button>
     </div>
   );
 }

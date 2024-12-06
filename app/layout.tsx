@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import localFont from "next/font/local";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
@@ -29,11 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`}
       >
         <SessionProvider>
           <Session />
-          <div className="flex">
+          <div className="flex h-full">
             {!isLoginPage && <NavMenu />}
             <main className="flex-1 p-4">{children}</main>
           </div>

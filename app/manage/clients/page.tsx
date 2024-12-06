@@ -68,7 +68,7 @@ export default function Clients() {
   );
 
   return (
-    <div className="p-6 flex" style={{ height: "100vh" }}>
+    <div className="p-6 flex">
       <motion.div
         style={{ flex: 1, overflowY: "auto" }}
         initial={{ opacity: 0 }}
@@ -93,7 +93,7 @@ export default function Clients() {
                 </InputAdornment>
               ),
             }}
-            style={{ marginRight: 8 }}
+            className="mr-8"
           />
           <IconButton>
             <FilterListIcon />
