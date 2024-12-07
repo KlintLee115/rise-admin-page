@@ -39,6 +39,7 @@ export default function AddClientDialog({
       name,
       email,
       phone,
+      
       membership,
       accountType,
       profilePicture: "", // Implement file upload if necessary
