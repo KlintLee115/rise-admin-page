@@ -1,8 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import ClientTable from "@/app/components/clients/ClientTable";
-import AddClientDialog from "@/app/components/clients/AddClientDialog";
 import {
   Button,
   Typography,
@@ -13,14 +11,16 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import FilterListIcon from "@mui/icons-material/FilterList";
-import ClientDetail from "@/app/components/clients/ClientDetail";
 import { motion } from "framer-motion";
 
 // Import Client interface
-import { Client } from "@/app/types/Clients/client";
 
 // Import JSON data
-import clientsData from "@/app/components/clients/clients.json";
+import clientsData from "src/components/clients/clients.json";
+import { Client } from "src/types/Clients/client";
+import ClientDetail from "./[id]/page";
+import AddClientDialog from "src/components/clients/AddClientDialog";
+import ClientTable from "src/components/clients/ClientTable";
 
 export default function Clients() {
   const [clients, setClients] = useState<Client[]>([]);
@@ -119,7 +119,7 @@ export default function Clients() {
         PaperProps={{ style: { width: '50%' } }}
       >
         {drawerContent === "details" && selectedClientId && (
-          <ClientDetail clientId={selectedClientId} onBack={handleDrawerClose} />
+          <ClientDetail/>
         )}
         {drawerContent === "add" && (
           <AddClientDialog
