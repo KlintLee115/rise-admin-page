@@ -1,4 +1,4 @@
-import PageName from "./components/pagename";
+import PageName from "../components/pagename";
 
 export default function Home() {
 
