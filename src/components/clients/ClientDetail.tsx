@@ -10,15 +10,12 @@ import {
   Button,
   TextField,
   IconButton,
-  Grid,
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
-// Import Client interface
-import { Client } from "@/app/types/Clients/client";
-
 // Import JSON data
-import clientsData from "@/app/components/clients/clients.json";
+import clientsData from "src/components/clients/clients.json";
+import { Client } from "src/types/Clients/client";
 
 export default function ClientDetail({
   clientId,
