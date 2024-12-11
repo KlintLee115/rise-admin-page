@@ -13,9 +13,9 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { Client } from "src/types/Clients/client";
 
 // Import Client interface
-import { Client } from "@/app/types/Clients/client";
 
 export default function AddClientDialog({
   open,
