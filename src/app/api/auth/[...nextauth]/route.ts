@@ -1,14 +1,14 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
-if (!process.env.ClientId || !process.env.ClientSecret) {
+if (!process.env.GOOGLE_AUTH_ClientId || !process.env.ClientSecret) {
     throw new Error("error");
 }
 
 const handler = NextAuth({
   providers: [
     GoogleProvider({
-      clientId: process.env.ClientId,
+      clientId: process.env.GOOGLE_AUTH_ClientId,
       clientSecret: process.env.ClientSecret
     }),
   ],
