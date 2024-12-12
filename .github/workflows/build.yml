@@ -21,5 +21,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Set environment variables
+        run: |
+          echo "GOOGLE_AUTH_CLIENTID=${{ secrets.GOOGLE_AUTH_CLIENTID }}" >> $GITHUB_ENV
+          echo "GOOGLE_AUTH_CLIENTSECRET=${{ secrets.GOOGLE_AUTH_CLIENTSECRET }}" >> $GITHUB_ENV
+
       - name: Run build
         run: npm run build
+        env:
+          GOOGLE_AUTH_CLIENTID: ${{ secrets.GOOGLE_AUTH_CLIENTID }}
+          GOOGLE_AUTH_CLIENTSECRET: ${{ secrets.GOOGLE_AUTH_CLIENTSECRET }}
